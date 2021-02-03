@@ -20,14 +20,7 @@ export class AppComponent {
 if (index > -1) {
   this.fruits.splice(index, 1);
 }
-    // const fruits = (this.form.controls. as FormArray);
 
-    // if (isChecked) {
-    //   fruits.push(new FormControl(name));
-    // } else {
-    //   const index = fruits.controls.findIndex(x => x.value === name);
-    //   fruits.removeAt(index);
-    // }
   }
   form = new FormGroup({
     fruits: new FormControl(),
