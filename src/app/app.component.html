@@ -1,5 +1,5 @@
 <div style="margin-top: 30px;">
-  <form [formGroup]="form" (ngSubmit)="submit()" style="display: flex;flex-direction: row;">
+  <form [formGroup]="form"  style="display: flex;flex-direction: row;">
     <div class="checkbox-fruit-flex">
     <div *ngFor="let fruit of fruits">
       <input type="checkbox" formControlName="fruits"  value="isChecked" (change)="onChange(fruit,isChecked)" />
