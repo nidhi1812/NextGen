@@ -15,7 +15,7 @@ export class AppComponent {
   constructor(private fb: FormBuilder) { }
 
   onChange(name:String , isChecked : Boolean) {
-    this.newFruits?.push(name);
+    this.newFruits.push(name);
     const index = this.fruits.indexOf(name);
 if (index > -1) {
   this.fruits.splice(index, 1);
@@ -29,7 +29,4 @@ if (index > -1) {
    
   }
 
-  submit() {
-    console.log(this.form.value.name);
-  }
 }
